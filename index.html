@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliezer J. Santos</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-blue">HOME</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">SOBRE</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">RESUMO</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">CONTATO</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">PROJETOS</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="./20211125_150920_276.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-grey w3-hover-text-indigo" href="https://github.com/JSanBravo" target="_blank">
+              <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-grey w3-hover-text-indigo" href="https://www.instagram.com/eliezeer.santos/" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-grey w3-hover-text-indigo" href="https://twitter.com/BravoSanLV" target="_blank">
+             <i data-feather="twitter"></i>
+          </a>
+          <a class="icon-link w3-text-grey w3-hover-text-indigo" href="https://www.linkedin.com/in/eliezerjsantosoficial/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="w3-grey w3-hover-text-indigo w3-button w3-round-small w3-hover-text-deep-indigo w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
+            <span class="w3-margin-left download-text">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-indigo w3-hover-text-indigo w3-margin-left w3-hide-small">HOME</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-indigo w3-hover-text-indigo w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTATO</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-indigo w3-hover-text-indigo w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CURRICULO</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-indigo w3-hover-text-indigo w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">SOBRE</a>
+          <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-indigo w3-hover-text-indigo w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJETOS</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:w3-hide-medium;">"Uma mente livre não está sujeita ao tempo./ A mind free is not underneath at time."</p>
+            <h3>Eliezer J. Santos (40)</h3>
+            <h4>Analista de Sistemas / Dev. Front End</h4>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h4 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">SOBRE / ABOUT</h4>
+            <p class="w3-margin-top-2"> 
+              Aluno de Análise e Desenvolvimento de Sistemas pela UniDomBosco EAD. Desenvolvedor Front End Junior. 
+              Desenvolvedor Mobile iniciante (android Java/Kotlin). Web and Graphic Designer. Suporte Técnico Pleno, 
+              Arquitetura de Redes ISP e Residencial Nível Jr. Atua a mais de 12 anos com atendimento ao cliente, 
+              suporte e afins.
+            </p>
+            
+          </div>
+          <!--PROJECTS SECTION-->
+          <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h4 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">PROJETOS / PROJECTS</h4>
+            <p class="w3-margin-top-2"> 
+              
+            </p>
+            
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h4 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">CURRICULO / RESUME</h4>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+              <!--EMPLOYMENT HISTORY SECTION-->
+              <h4 class="w3-border-amber">EXPERIÊNCIA PROFISSIONAL</h4>
+              <div class="">
+                <h4>Suporte Técnico em Viamar Telecom</h4>
+                <p>Abril - 2018 - Até o momento</p>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Atuação no setor de suporte técnico nível 1 por telefone e whatsapp. Configuração de equipamentos, levantamento de rotas.</li>
+                  <li>Administração de redes remotas 2.4G / 5G. Help Desk, Vendas, financeiro e administrativo.</li>
+                  <li>Suporte ao cliente · Gestão de relacionamento com o cliente (CRM) · Experiência do cliente · Microsoft Excel · Microsoft Office.</li>
+                </ul>
+              </div>
+              
+              
+            </div>
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h4 class="w3-border-amber">FORMAÇÃO / DEGREES</h4>
+                <h4>Técnico em Design Gráfico, Seven Comp. Gráfica.</h4>
+                <p>Setembro 2009 - Julho 2012 </p>
+                <h4>Análise e Desenvolvimento de Sistemas, UniDomBosco EAD.</h4>
+                <p>Outubro 2022 - Maio 2025 </p>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h4 class="w3-border-amber">HABILIDADES / MY SKILLS</h4>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li>Excelente comunicação verbal e escrita, adquirida em anos de atendimento ao público e trabalhos extras como redator.</li>
+                <li>Excelente capacidade de aprendizado, devido a uma mente sempre criativa, inconformada e aberta a novas experiências e conhecimentos. </li>
+                <li>Excelente capacidade de gerenciamento de equipes e ótimo controle emocional, mesmo sob pressão.</li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Hard  skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Vasta experiência com Microsoft Office e Google planilhas.</li>
+                  <li>Proficiência em qualquer tipo de escrita, principalmente técnica.</li>
+                  <li>Ótima habilidade em composição de designs para impressos ou mídias sociais.</li>
+                  <li>Boa capacidade em Dev. Front End, principalmente em HTML, CSS e Javascript.</li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h4 class="w3-border-amber">IDIOMAS</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>Inglês (avançado).</li>
+                  <li>Espanhol (básico).</li>
+                </ul>
+            </div>
+
+            <!--REFERENCE SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h4 class="w3-border-amber">CERTIFICAÇÕES</h4>
+              <h4>EFSET English Certificate 52/100 B2 Upper Intermediate test</h4>
+                <h5><p><a href="https://www.efset.org/cert/cMxJXr"class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">CLIQUE AQUI</a></p></h5>
+              
+             
+              <h4>Curso de Liderança Formando Campeões </h4>
+               <h5><p><a href="https://conquerplus.com.br/certificates/0acabe94-cdb1-467c-8e0a-1242322aea20"class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue" onclick="toggleNavigation()">CLIQUE AQUI</a></p></h5>
+             
+            </div>            
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h4 class="w3-border-bottom w3-border-blue" style="border-width: 3px !important;">CONTATOS / CONTACTS</h4>
+            <div class="w3-margin-top-2" style="font-weight: 500 color: white;">
+              <p>Eliezer J. Santos</p>
+            
+              <p>Telefone: +5522992368488</p>
+              <p>E-mail: eliezer.j.santos@hotmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2023 - Eliezer J. Santos (BravoSan)</p>
+           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>

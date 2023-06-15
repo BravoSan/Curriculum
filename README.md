@@ -1,3 +1,4 @@
 # Curriculum Vitae (CV) Online
-Referência W3C: https://www.w3schools.com/howto/howto_website_create_resume.asp
-Template modificada: https://bravosan.w3spaces.com/#home
+Por restrições da w3c, segue o link do projeto na plataforma de origem, com a template modificada: https://bravosan.w3spaces.com/#home.
+
+
